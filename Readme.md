@@ -1,4 +1,3 @@
-Apologies for the oversight. Here's an updated version of the README file that includes information about the live link:
 
 # Sudoku Solver
 
