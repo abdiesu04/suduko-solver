@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <title>Sudoku Solver</title>
+  <script language="javascript" src="index.js"></script>
+  <script language="javascript" src="main.js"></script>
+  <style type="text/css">
+    body,
+    td,
+    p {
+      font: 12px "Trebuchet MS", Helvetica, sans-serif;
+    }
+  
+    a,
+    a:visited {
+      color: #1876c9;
+    }
+  
+    a:hover {
+      color: #d9534f;
+    }
+  
+    .container {
+      text-align: center;
+      position: relative;
+      padding: 20px 0;
+      width: 800px;
+      margin: auto;
+      background: #eee9e9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    table {
+      position: relative;
+      margin: 0 auto;
+    }
+  
+    .board-block {
+      position: relative;
+      margin: 0 auto;
+      background: white;
+      border: 3px solid #428bca;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .input {
+      border: 0px;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+    }
+  
+    .cell {
+      width: 1em;
+      height: 1em;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      padding: 0.3em;
+    }
+  
+    .cell1 {
+      width: 1em;
+      height: 1em;
+      border-bottom: 2px solid #ccc;
+      border-left: 1px solid #ccc;
+      padding: 0.3em;
+    }
+  
+    .cell2 {
+      width: 1em;
+      height: 1em;
+      border-bottom: 1px solid #ccc;
+      border-left: 2px solid #ccc;
+      padding: 0.3em;
+    }
+  
+    .cell3 {
+      width: 1em;
+      height: 1em;
+      border-bottom: 2px solid #ccc;
+      border-left: 2px solid #ccc;
+      padding: 0.3em;
+    }
+  
+    .table {
+      border-top: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+      border-collapse: collapse;
+    }
+  
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      color: #666;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  
+    input[type="button"] {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #428bca;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    input[type="button"]:hover {
+      background-color: #317cb8;
+    }
+  
+    #runtime {
+      color: gray;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body onLoad='draw_9x9();'>
+  <a href="https://github.com/SamirHodzic/sudoku-solver-js">
+    <img class="github-banner" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+  </a>
+  <div class="container">
+    <h1 style="padding-bottom: 20px;">Sudoku Solver</h1>
+    <div style="text-align: left; padding: 0 20px 20px 20px;">
+      🧩 Conquer Sudoku Puzzles with Ease! 🚀
+
+      Welcome to our Sudoku Solver! With advanced algorithms and a user-friendly interface, solving Sudoku puzzles has never been easier. Get started today and experience the thrill of becoming a Sudoku master! 🧠  
+    </div>
+    <div class="board-block">
+      <div style="padding-bottom: 15px;">
+        Puzzles:
+        <input type="button" value="Beginner" onClick="setPredefined('beginner')">
+        <input type="button" value="Easy" onClick="setPredefined('easy')">
+        <input type="button" value="Normal" onClick="setPredefined('normal')">
+        <input type="button" value="Hard" onClick="setPredefined('hard')">
+        <input type="button" value="Evil" onClick="setPredefined('evil')">
+      </div>
+      <table>
+        <tr style="vertical-align: top">
+          <td style="padding: 0 32px;">
+            <span id="9x9"></span>
+          </td>
+        </tr>
+      </table>
+      <div style="padding-top: 15px;">
+        <div>
+          <input type="button" value="Solve" onClick="solve();">
+          <input type="button" value="Clear" onClick="clear_input();">
+        </div>
+        <div id="runtime" style="color: gray; padding-top: 10px;">
+          Solved puzzle in 0 seconds ( 0 ms ).
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
