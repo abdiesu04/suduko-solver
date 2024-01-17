@@ -18,7 +18,7 @@ The Sudoku Solver uses the backtracking algorithm to solve Sudoku puzzles. This 
 
 ## Live Link
 
-You can access the live version of the Sudoku Solver [here](https://65a6f2add410ec256667f304--inspiring-tarsier-f37c43.netlify.app/). With advanced algorithms and a user-friendly interface, solving Sudoku puzzles has never been easier. Visit the live link and experience the thrill of becoming a Sudoku master! 🧩
+You can access the live version of the Sudoku Solver [here](https://65a79d893b6fe992be2bccc3--darling-quokka-527d1b.netlify.app/). With advanced algorithms and a user-friendly interface, solving Sudoku puzzles has never been easier. Visit the live link and experience the thrill of becoming a Sudoku master! 🧩
 
 ## Contributing
 
