@@ -1,7 +1,7 @@
 
 # Sudoku Solver
 
-This is a JavaScript library that provides a Sudoku solver. It allows you to input a Sudoku puzzle and solve it using the backtracking algorithm.
+This is a JavaScript based Sudoku solver web App. It allows you to input a Sudoku puzzle and solve it using the backtracking algorithm.
 
 ## Table of Contents
 
