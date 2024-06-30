@@ -1,4 +1,4 @@
-
+This app is a Sudoku solver implemented in JavaScript using the backtracking algorithm. Sudoku is a logic-based combinatorial number-placement puzzle where the objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contain all of the digits from 1 to 9.
 # Sudoku Solver
 
 This is a JavaScript based Sudoku solver web App. It allows you to input a Sudoku puzzle and solve it using the backtracking algorithm.
